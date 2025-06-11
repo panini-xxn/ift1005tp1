@@ -1,0 +1,152 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: #f3f3f3;
+}
+
+.logo {
+    display:inline-flex; 
+    float: left;
+    padding: 10px
+  }
+  
+ 
+.logo img {
+    width: 30px; 
+    height:auto; 
+  }
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+    margin: 0;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap; /* 如果需要的话，添加换行 */
+}
+
+aside {
+    width: 20%;
+    background: #eee; /* 调整颜色以符合您的设计 */
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #333;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.tourist-attraction {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 20px;
+}
+
+.tourist-attraction img {
+    max-width: 50%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.tourist-attraction h2,
+.tourist-attraction p {
+    margin: 0;
+    padding: 0;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Adjust the gap as needed */
+    padding: 20px; /* Adjust the padding as needed */
+    background: #f7f7f7; /* This is an example background color */
+  }
+  
+  .food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the text horizontally */
+  }
+  
+  .food-item img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* This will keep the aspect ratio of the images */
+    border-radius: 10px; /* Optional: if you want rounded corners */
+  }
+  
+  .food-item p {
+    margin-top: 8px; /* Adjust as needed */
+    text-align: center;
+    font-size: 16px; /* Adjust as needed */
+  }
+
+.a-propos{
+    text-align: center;
+    padding: 20px;
+}
+.quote{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
